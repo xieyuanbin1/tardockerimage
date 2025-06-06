@@ -28,7 +28,7 @@ jobs:
       # docker pull --platform linux/arm64 <image_name:tag>
       - name: Pull Docker image
         run: |
-          docker pull --platform linux/arm64 docker pull mongodb/mongodb-community-server:6.0.22
+          docker pull --platform linux/arm64 mongodb/mongodb-community-server:6.0.22
           docker images  # 验证镜像已拉取
 
       # run: docker save <image_name> -o <tar_name>
